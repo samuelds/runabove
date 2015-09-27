@@ -22,16 +22,6 @@
 
 		public function __construct($auth_app, $auth_private, $auth_consumer = null, $auth_project = null)
 		{
-			if (!empty($auth_app) && !empty($auth_private))
-			{
-				$this->auth_app = $auth_app;
-				$this->auth_private = $auth_private;
-			}
-			else {
-				echo "Runabove : Application Key and Application Secret is required !";
-				return false;
-			}
-
 			if (!empty($auth_consumer))
 			{
 				$this->auth_consumer = $auth_consumer;
